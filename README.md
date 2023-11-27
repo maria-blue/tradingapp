@@ -8,5 +8,4 @@ To run the application:
 
 To send requests and test the application, you will need to use Postman.
 - Open Postman.
-- Import the given Postman Collection: 
 - Send the desired requests.
