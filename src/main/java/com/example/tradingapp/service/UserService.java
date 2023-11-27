@@ -11,7 +11,7 @@ public class UserService {
   @Autowired
   UserRepository userRepository;
 
-  public TradingUser createUser(TradingUser tradingUser) {
+  public TradingUser saveOrUpdateUser(TradingUser tradingUser) {
     return userRepository.save(tradingUser);
   }
 
@@ -19,9 +19,7 @@ public class UserService {
     return userRepository.findById(id).orElseThrow();
   }
 
-  public void deleteUser(TradingUser tradingUser) {
-    userRepository.delete(tradingUser);
+  public void deleteUser(int userId) {
+    userRepository.deleteById(userId);
   }
-
-
 }

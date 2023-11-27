@@ -18,7 +18,7 @@ public class TradingUser {
   private String username;
 
   @Column
-  private byte[] password;
+  private String password;
 
   public int getId() {
     return id;
@@ -36,11 +36,11 @@ public class TradingUser {
     this.username = username;
   }
 
-  public byte[] getPassword() {
+  public String getPassword() {
     return password;
   }
 
-  public void setPassword(byte[] password) {
+  public void setPassword(String password) {
     this.password = password;
   }
 

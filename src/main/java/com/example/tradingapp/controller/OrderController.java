@@ -31,4 +31,10 @@ public class OrderController {
     orderService.saveOrUpdate(order);
     return order.getId();
   }
+
+  @PostMapping("/buyOrder")
+  private int buyOrder(@RequestBody Order order) {
+    orderService.buyOrder(order);
+    return order.getId();
+  }
 }
